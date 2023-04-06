@@ -1,5 +1,5 @@
 {
-  "name": "paulhutchison/activecampaign-api-v3-wrapper",
+  "name": "phwebs/activecampaign-api-v3-wrapper",
   "description": "Wrapper for ActiveCampaing API v3, which allows to work with their services, using PHP",
   "type": "library",
   "require": {
