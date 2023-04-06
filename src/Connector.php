@@ -1,6 +1,6 @@
 <?php
 
-namespace Dhrechanyi\ActiveCampaign;
+namespace Phwebs\ActiveCampaign;
 
 
 use GuzzleHttp\Client;

@@ -1,8 +1,8 @@
 <?php
 
-namespace Dhrechanyi\ActiveCampaign\Classes;
+namespace Phwebs\ActiveCampaign\Classes;
 
-use Dhrechanyi\ActiveCampaign\Connector;
+use Phwebs\ActiveCampaign\Connector;
 
 
 class Lists extends Connector

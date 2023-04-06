@@ -1,10 +1,10 @@
 <?php
 
-namespace Dhrechanyi\ActiveCampaign;
+namespace Phwebs\ActiveCampaign;
 
-use Dhrechanyi\ActiveCampaign\Classes\Lists;
-use Dhrechanyi\ActiveCampaign\Classes\Contacts;
-use Dhrechanyi\ActiveCampaign\Classes\Tags;
+use Phwebs\ActiveCampaign\Classes\Lists;
+use Phwebs\ActiveCampaign\Classes\Contacts;
+use Phwebs\ActiveCampaign\Classes\Tags;
 
 
 class ActiveCampaign
