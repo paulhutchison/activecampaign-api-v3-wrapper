@@ -90,7 +90,7 @@ class Contacts extends Connector
 
 
 	public function addTag($params)
-	{
+	{	
 		return $this->request('POST', 'contactTags', ['contactTag' => $params]);
 	}
 

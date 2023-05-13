@@ -6,7 +6,7 @@ namespace Phwebs\ActiveCampaign;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Exception\ServerException;
-
+use Exception;
 
 class Connector
 {
@@ -70,22 +70,18 @@ class Connector
 
 	protected function request($method, $endpoint, $data = [])
 	{
+		$response = false;
 		try {
 			$client		= new Client(['headers' => ['Api-Token' => $this->api_key]]);
 			$url		= $this->buildUrl($endpoint);
 			$options	= !empty($data) ? ['json' => $data] : [];
 			$request 	= $client->request($method, $url, $options);
 
-			return json_decode($request->getBody()->getContents(), true);
-
-		} catch (ClientException $exception) {
-			 echo $exception->getMessage();
-		} catch (ServerException $exception) {
-			 echo $exception->getMessage();
+			$response = json_decode($request->getBody()->getContents(), true); 
+		} catch (Exception $e) {
+			 throw $e;
 		}
 
-		die;
+		return $response;
 	}
-
-
 }

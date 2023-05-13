@@ -5,7 +5,7 @@ namespace Phwebs\ActiveCampaign;
 use Phwebs\ActiveCampaign\Classes\Lists;
 use Phwebs\ActiveCampaign\Classes\Contacts;
 use Phwebs\ActiveCampaign\Classes\Tags;
-
+use Phwebs\ActiveCampaign\Classes\Notes;
 
 class ActiveCampaign
 {
@@ -31,6 +31,11 @@ class ActiveCampaign
 	public function tags()
 	{
 		return new Tags($this->base_url, $this->api_key);
+	}
+	
+	public function notes()
+	{
+		return new Notes($this->base_url, $this->api_key);
 	}
 
 }
